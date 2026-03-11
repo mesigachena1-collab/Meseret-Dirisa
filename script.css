@@ -1,0 +1,229 @@
+/* ============================
+   Color Palette
+============================ */
+:root {
+    --primary: #4a4f54;
+    --secondary: #ffc107;
+    --bg: #f8f9fa;
+    --text: #343a40;
+    --card-bg: #ffffff;
+    --card-shadow: rgba(0, 0, 0, 0.1);
+}
+
+/* ============================
+   General Body
+============================ */
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* Links */
+a {
+    color: var(--primary);
+    text-decoration: none;
+    transition: color 0.3s, transform 0.2s;
+}
+
+a:hover {
+    color: var(--secondary);
+    transform: translateY(-2px);
+}
+
+/* ============================
+   Navbar Overrides
+============================ */
+.navbar {
+    background-color: var(--primary);
+}
+
+.navbar .navbar-brand {
+    color: #fff;
+    font-weight: 700;
+}
+
+.navbar .nav-link {
+    color: #fff;
+    transition: all 0.3s;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+    color: var(--primary);
+    background-color: var(--secondary);
+    border-radius: 5px;
+    transform: translateY(-2px);
+}
+
+/* Navbar search */
+.navbar .search-input {
+    border: 1px solid #ccc;
+    border-radius: 20px 0 0 20px;
+    height: 36px;
+    padding: 0 12px;
+}
+
+.navbar .search-btn {
+    border-radius: 0 20px 20px 0;
+    background-color: var(--secondary);
+    border: none;
+    padding: 0 16px;
+    font-weight: 500;
+    color: var(--text);
+}
+
+.navbar .search-btn:hover {
+    background-color: var(--primary);
+    color: #fff;
+}
+
+/* ============================
+   Buttons Overrides
+============================ */
+.btn-primary {
+    background-color: var(--secondary);
+    border-color: var(--secondary);
+    color: var(--text);
+}
+
+.btn-primary:hover {
+    background-color: var(--primary);
+    border-color: var(--primary);
+    color: var(--text);
+    transform: translateY(-2px);
+}
+
+.btn-success {
+    background-color: var(--secondary);
+    border-color: var(--secondary);
+}
+
+.btn-success:hover {
+    background-color: var(--primary);
+    border-color: var(--primary);
+    color: #fff;
+}
+
+/* Read More button */
+.btn-readmore {
+    background-color: var(--secondary);
+    border-color: var(--secondary);
+    color: var(--text);
+    font-weight: 600;
+    padding: 8px 18px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.btn-readmore:hover {
+    background-color: var(--primary);
+    border-color: var(--primary);
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+/* ============================
+   Cards / Posts Grid
+============================ */
+.row-posts {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px;
+}
+
+.card-post {
+    flex: 1 1 calc(33.333% - 20px);
+    /* 3 per row */
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: var(--card-bg);
+    box-shadow: 0 6px 18px var(--card-shadow);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card-post:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.card-post img,
+.card-post video {
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+    display: block;
+    border-radius: 0;
+}
+
+.card-post .card-body {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.card-post h5 {
+    color: var(--primary);
+    margin-bottom: 10px;
+}
+
+.card-post h5:hover {
+    color: var(--secondary);
+}
+
+.card-post .card-text {
+    flex-grow: 1;
+    margin-bottom: 15px;
+}
+
+/* ============================
+   Footer
+============================ */
+footer {
+    background-color: var(--primary);
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 30px;
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* ============================
+   Full-width container
+============================ */
+main.container {
+    max-width: 100% !important;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* ============================
+   Responsive
+============================ */
+@media (max-width: 992px) {
+    .card-post {
+        flex: 1 1 calc(50% - 20px);
+        /* 2 per row */
+    }
+}
+
+@media (max-width: 768px) {
+    .card-post {
+        flex: 1 1 100%;
+        /* 1 per row */
+    }
+
+    main.container {
+        padding: 10px;
+        margin: 0;
+    }
+}

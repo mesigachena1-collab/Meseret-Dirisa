@@ -35,6 +35,7 @@ a {
     margin: 0 auto;
 }
 
+/* Header */
 #header {
     min-height: 100vh;
     background:
@@ -206,6 +207,7 @@ nav ul li a:hover::after {
     padding: 8px 12px;
 }
 
+/* Services */
 .services-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -244,6 +246,7 @@ nav ul li a:hover::after {
     color: var(--muted);
 }
 
+/* Portfolio */
 .work-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -337,6 +340,7 @@ nav ul li a:hover::after {
     padding: 16px;
 }
 
+/* Buttons and contact */
 .btn {
     display: inline-block;
     width: fit-content;

@@ -9,36 +9,6 @@
     <title>Meseret Gachena Dirisa | Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <script src="https://kit.fontawesome.com/6bd74de211.js" crossorigin="anonymous"></script>
-    <style>
-        /* Add the fade-in animation to the body */
-        .header-text {
-            animation: fadeIn 2s ease-in-out;
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-
-            to {
-                opacity: 1;
-            }
-        }
-
-        /* Hover effect for the services section */
-        .services-list div:hover {
-            transform: translateY(-10px);
-            transition: all 0.3s ease-in-out;
-        }
-
-        .services-list i {
-            transition: transform 0.3s ease;
-        }
-
-        .services-list div:hover i {
-            transform: scale(1.2);
-        }
-    </style>
 </head>
 
 <body>
@@ -51,19 +21,25 @@
                     <li><a href="#about">About</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="MeseretCV.html">CV</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <i class="fas fa-times" onclick="closemenu()"></i>
                 </ul>
                 <i class="fas fa-bars" onclick="openmenu()"></i>
             </nav>
+
             <div class="header-text">
-                <p class="introtext">Computing Undergraduate</p>
-                <h1>Hi, I'm <span>Meseret Gachena</span><br />Dirisa</h1>
+                <p class="introtext">BSc (Hons) Computing Student | Software Developer | Data Enthusiast</p>
+                <h1>Hi, I'm <span>Meseret Gachena Dirisa</span></h1>
+                <p>
+                    Computing student at the University of Greenwich with strong academic performance,
+                    experience in IT Support, Web Development, SQL Databases and Data Analysis.
+                    Currently seeking Software Development, Data Analyst and IT internships.
+                </p>
             </div>
         </div>
     </div>
 
-    <!-- ----------------------about--------------------------- -->
     <div id="about">
         <div class="container">
             <div class="row">
@@ -73,116 +49,159 @@
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
                     <p>
-                        Hi, I'm Meseret Gachena Dirisa, a Computing undergraduate at the University of Greenwich with a background
-                        in Civil Engineering. I’m building my skills in Python, SQL, and IT support while seeking a summer internship
-                        to apply what I’ve learned and contribute to real-world tech solutions.
+                        I am a Computing student at the University of Greenwich with a background in
+                        Civil Engineering and professional experience in IT Support and Customer Service.
+                        I enjoy building web applications, designing databases, solving technical
+                        problems and analysing data.
                     </p>
                     <p>
-                        I enjoy problem-solving, helping others with tech issues, and learning new tools to improve how systems
-                        work. Passionate about entering the fields of software development, IT support, and data analysis.
+                        I am currently developing projects using HTML, CSS, JavaScript, PHP, Python,
+                        SQL and GitHub while preparing for a career in Software Engineering, Data
+                        Engineering or Data Analytics.
                     </p>
+
                     <h3>Key Skills</h3>
                     <ul>
-                        <li>Python Programming</li>
-                        <li>SQL Database Management</li>
+                        <li>Python</li>
+                        <li>JavaScript</li>
+                        <li>PHP</li>
+                        <li>SQL MySQL</li>
+                        <li>HTML5 & CSS3</li>
+                        <li>Git & GitHub</li>
+                        <li>Data Analysis</li>
+                        <li>Database Design</li>
+                        <li>Web Development</li>
                         <li>IT Support & Troubleshooting</li>
-                        <li>Problem Solving & Logical Thinking</li>
-                        <li>Data Analysis with Excel</li>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- -----------------------------Services------------------------------ -->
     <div id="services">
         <div class="container">
-            <h1 class="sub-title">What I Do</h1>
+            <h1 class="sub-title">Technical Skills</h1>
             <div class="services-list">
                 <div>
                     <i class="fa-solid fa-headset"></i>
-                    <h2>IT Support</h2>
-                    <p>Troubleshooting software and hardware issues, setting up and maintaining computer systems for smooth operation.</p>
+                    <h2>SQL Database Design</h2>
+                    <p>Designing relational databases, writing SQL queries and managing data efficiently.</p>
                 </div>
                 <div>
                     <i class="fa-solid fa-code"></i>
-                    <h2>Programming</h2>
-                    <p>Writing Python scripts and working on web development projects to build practical coding experience.</p>
+                    <h2>Data Analytics</h2>
+                    <p>Using Excel, SQL and Python to analyse datasets and produce meaningful insights.</p>
                 </div>
                 <div>
                     <i class="fa-solid fa-brain"></i>
-                    <h2>Problem Solving</h2>
-                    <p>Using logical thinking and technical knowledge to diagnose and resolve IT and programming challenges.</p>
+                    <h2>Software Development</h2>
+                    <p>Using logical thinking and technical knowledge to diagnose and resolve programming challenges.
+                    </p>
                 </div>
                 <div>
                     <i class="fa-solid fa-table-columns"></i>
-                    <h2>Data Handling</h2>
-                    <p>Writing SQL queries and analyzing data using Excel to support decision-making and reporting.</p>
+                    <h2>Technical Support</h2>
+                    <p>Troubleshooting hardware, software and networking issues while supporting users.</p>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- ---------------------------portfolio-------------------- -->
     <div id="portfolio">
         <div class="container">
-            <h1 class="sub-title">My Work</h1>
+            <h1 class="sub-title">Current Projects</h1>
+
             <div class="work-list">
                 <div class="work">
-                    <img src="images/python-budget-tracker.png" alt="Python Budget Tracker" />
+                    <img src="images/supermarket.jpg" alt="Supermarket Dashboard">
                     <div class="layer">
-                        <h3>Python Budget Tracker</h3>
-                        <p>A simple command-line tool to manage and track personal expenses.</p>
-                        <a href="https://github.com/meseret/python-budget-tracker" target="_blank" rel="noopener">
-                            <i class="fa-solid fa-square-arrow-up-right"></i>
-                        </a>
+                        <h3>Supermarket Sales Dashboard</h3>
+                        <p>Designed a supermarket database using SQL and built an interactive Power BI dashboard.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
                     </div>
                 </div>
+
                 <div class="work">
-                    <img src="images/it-troubleshooting-log.png" alt="IT Troubleshooting Log" />
+                    <img src="images/python.jpg" alt="Python Project">
                     <div class="layer">
-                        <h3>IT Troubleshooting Log</h3>
-                        <p>Documented real-world IT issues and the corresponding fixes to build practical knowledge.</p>
-                        <a href="https://github.com/meseret/it-troubleshooting-log" target="_blank" rel="noopener">
-                            <i class="fa-solid fa-square-arrow-up-right"></i>
-                        </a>
+                        <h3>Python Data Analysis</h3>
+                        <p>Analysed datasets using Python, Pandas, NumPy and Matplotlib.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
                     </div>
                 </div>
+
                 <div class="work">
-                    <img src="images/database-project.png" alt="Database Project" />
+                    <img src="images/ml.jpg" alt="Machine Learning">
                     <div class="layer">
-                        <h3>Database Project (Coursework)</h3>
-                        <p>Designed a student information system using MySQL and ER diagrams.</p>
-                        <a href="https://github.com/meseret/database-project" target="_blank" rel="noopener">
-                            <i class="fa-solid fa-square-arrow-up-right"></i>
+                        <h3>Machine Learning Project</h3>
+                        <p>Built machine learning models using Scikit-learn to predict outcomes.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/blog.jpg" alt="World Culture Blog">
+                    <div class="layer">
+                        <h3>World Culture Blog</h3>
+                        <p>Full-stack PHP and MySQL blogging platform with authentication and admin panel.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/portfolio.jpg" alt="Portfolio Website">
+                    <div class="layer">
+                        <h3>Portfolio Website</h3>
+                        <p>Personal portfolio built with HTML, CSS and JavaScript.</p>
+                        <a href="https://github.com/mesigachena1-collab/Supermarket-Sales-Dashboard" target="_blank">
+                            <i class="fas fa-external-link-alt"></i>
                         </a>
                     </div>
                 </div>
             </div>
-            <a href="#" class="btn">See more</a>
         </div>
     </div>
 
-    <!-- -------------contact------------------------- -----------> 
+    <div id="achievements">
+        <h1 class="sub-title">Academic Achievements</h1>
+        <ul>
+            <li>Stage 1 Average: 84%</li>
+            <li>Stage 2 Average: 81%</li>
+            <li>93% - Web Programming 1</li>
+            <li>93% - Web Programming 2</li>
+            <li>90% - Agile Development with SCRUM</li>
+            <li>90% - Mathematics for Computer Science</li>
+            <li>88% - Object-Oriented Programming</li>
+            <li>84% - Principles of Security</li>
+            <li>81% - Applications in AI & Data Science</li>
+            <li>Expected Graduation: 2027</li>
+        </ul>
+    </div>
+
     <div id="contact">
         <div class="container">
             <div class="row">
                 <div class="contact-left">
                     <h1 class="sub-title">Contact Me</h1>
                     <p><i class="fa-solid fa-paper-plane"></i> messigachena2@gmail.com</p>
-                    <p><i class="fa-solid fa-phone"></i> +44 234 678 3545</p>
+                    <p><i class="fa-solid fa-phone"></i> +447424034508</p>
+
                     <div class="social-icons">
-                        <a href="https://facebook.com/" target="_blank" rel="noopener"><i class="fa-brands fa-square-facebook"></i></a>
-                        <a href="https://twitter.com/" target="_blank" rel="noopener"><i class="fa-brands fa-square-twitter"></i></a>
-                        <a href="https://instagram.com" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://linkedin.com/in/meseretdirisa" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://linkedin.com/in/meseretdirisa" target="_blank" rel="noopener">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/mesigachena1-collab" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
                     </div>
-                    <a href="MeseretCV.html" download class="btn btn2">Download CV</a>
+
+                    <a href="MeseretCV.html" class="btn btn2">View CV</a>
                 </div>
+
                 <div class="contact-right">
                     <form name="submit-to-google-sheet">
                         <input type="text" name="Name" placeholder="Your Name" required />
-                        <input type="email" name="email" placeholder="Your Email" required pattern="^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" />
+                        <input type="email" name="email" placeholder="Your Email" required />
                         <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
                         <button type="submit" class="btn btn2">Submit</button>
                     </form>
@@ -190,30 +209,17 @@
                 </div>
             </div>
         </div>
+
         <div class="copyright">
-            <p>&copy; <span id="current-year"></span> Meseret Gachena Dirisa <i class="fa-solid fa-heart"></i> All rights reserved.</p>
+            <p>&copy; <span id="current-year"></span> Meseret Gachena Dirisa. All rights reserved.</p>
         </div>
     </div>
 
     <script>
-        // Update the copyright year dynamically
         document.getElementById("current-year").textContent = new Date().getFullYear();
 
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName("tab-contents");
-
-        function opentab(tabname) {
-            for (tablink of tablinks) {
-                tablink.classList.remove("active-link");
-            }
-            for (tabcontent of tabcontents) {
-                tabcontent.classList.remove("active-tab");
-            }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab");
-        }
-
         var sidemenu = document.getElementById("sidemenu");
+
         function openmenu() {
             sidemenu.style.right = "0";
         }
@@ -222,50 +228,22 @@
             sidemenu.style.right = "-200px";
         }
 
-        const scriptURL = 'https://script.google.com/macros/s/AKfycby5tJ8ak4-3istTr-FMGM_nNubOefDnslDu8oJliMhCfCGt4iQXizbJdl-uVvI4pBYk/exec';
+        const scriptURL = "https://script.google.com/macros/s/AKfycby5tJ8ak4-3istTr-FMGM_nNubOefDnslDu8oJliMhCfCGt4iQXizbJdl-uVvI4pBYk/exec";
         const form = document.forms["submit-to-google-sheet"];
         const msg = document.getElementById("msg");
 
         form.addEventListener("submit", (e) => {
             e.preventDefault();
+
             fetch(scriptURL, { method: "POST", body: new FormData(form) })
-                .then((response) => {
+                .then(() => {
                     msg.innerHTML = "Message sent successfully";
-                    setTimeout(function () {
+                    setTimeout(() => {
                         msg.innerHTML = "";
                     }, 5000);
                     form.reset();
                 })
                 .catch((error) => console.error("Error!", error.message));
-        });
-    </script>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            // Apply slide-down effect when page loads
-            document.body.style.opacity = 0;
-            document.body.style.transform = "translateY(-50px)";
-            document.body.style.transition = "opacity 1s ease-in-out, transform 1s ease-in-out";
-
-            setTimeout(() => {
-                document.body.style.opacity = 1;
-                document.body.style.transform = "translateY(0)";
-            }, 100);
-
-            // Slide-down effect when navigating to another page
-            document.querySelectorAll("a").forEach((link) => {
-                link.addEventListener("click", function (e) {
-                    if (this.getAttribute("href").startsWith("#")) return; // Ignore anchor links
-
-                    e.preventDefault();
-                    let href = this.getAttribute("href");
-
-                    document.body.style.opacity = 0;
-                    document.body.style.transform = "translateY(50px)";
-
-                    setTimeout(() => (window.location.href = href), 1000);
-                });
-            });
         });
     </script>
 </body>
